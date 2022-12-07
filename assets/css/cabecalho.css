@@ -1,0 +1,46 @@
+.cabecalho{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 3rem;
+    
+}
+
+.logo{
+   width: 150px;
+   height: 50px; 
+   margin-right: 3rem;
+}
+
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.menu__lista{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu__link{
+    color: var(--branco);
+    margin: 0 .5rem;
+    text-decoration: none;
+}
+
+.menu__link:hover{
+    color: rgba(109, 109, 110, 0.7);
+    transition: .5s;
+}
+
+.icones__notificacao{
+    margin: 0 1rem;
+}
+
+.icones__perfil{
+    width: 30px;
+    height: 30px; 
+}
+
+
