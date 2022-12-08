@@ -22,15 +22,64 @@
                 <li class="menu__item"><a href="#" class="menu__link">Navegar por idiomas</a></li>
             </ul>
         </nav>
-        <div class="icones">
-            <img class="icones__buscar" src="assets/img/procurar.svg" alt="Icone de buscar">
-            <img class="icones__notificacao" src="assets/img/notificacao.svg" alt="Icone de notificação">
-            <img class="icones__perfil"src="assets/img/perfil.jpg" alt="Imagem perfil">
-        </div>
+        <ul class="menu">
+            <li class="menu__lista"><img class="icones__buscar" src="assets/img/procurar.svg" alt="Icone de buscar"></li>
+            <li class="menu__notificacao">
+                <img class="icones__notificacao" src="assets/img/notificacao.svg" alt="Icone de notificação">
+                <ul class="menu__filme">
+                    <li class="menu__lista">
+                        <div>
+                            <img class="menu__filme--imagem" src="assets/img/notificacao_img.jpg" alt="Iamgem do filme O Troll da Montanha">
+                        </div>
+                        <div>
+                            <h2 class="menu__filme--titulo">Top 10 em filmes: Brasil</h2>
+                            <h3 class="menu__filme--subtitulo">Veja o que está bombando</h3>
+                            <span class="menu__filme--texto">há 6 dias</span>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+            <li class="menu__perfil">
+                <div class="menu__icone">
+                    <img class="icones__perfil"src="assets/img/perfil.jpg" alt="Imagem perfil">
+                    <span class="icones__perfil--mudar"></span>
+                </div>
+                <ul class="detalhes">
+                    <li class="detalhes__icones">
+                        <img class="icones__perfil"src="assets/img/perfil2.png" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Paola</a>
+                    </li>
+                    <li class="detalhes__icones">
+                        <img class="icones__perfil"src="assets/img/perfil3.png" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Rita</a>
+                    </li>
+                    <li class="detalhes__icones">
+                        <img class="icones__gerenciar"src="assets/img/gerenciar.svg" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Gerenciar perfis</a>
+                    </li>
+                    <li class="detalhes__icones">
+                        <img class="icones__transferir"src="assets/img/gerenciar.svg" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Transferir perfil</a>
+                    </li>
+                    <li class="detalhes__icones">
+                        <img class="icones__conta"src="assets/img/conta.svg" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Conta</a>
+                    </li>
+                    <li class="detalhes__icones detatalhes__icones--final ">
+                        <img class="icones__ajuda"src="assets/img/ajuda.svg" alt="Imagem perfil">
+                        <a href="#" class="detalhes__nome">Central de ajuda</a>
+                    </li>
+                    <li class="detalhes__icones">
+                        <a href="#" class="detalhes__nome detalhes__nome--sair">Sair da Netflix</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </header>
+    
     <main>
         <section class="banner">
-            <img alt="Pepsi, Cade meu avião?" class="banner__imagem " src="assets/img/pepsi.png">
+            <img alt="Filme um natal cheio de graça" class="banner__imagem " src="assets/img/natal.png">
             <p class="banner__descricao">Um jovem de 20 anos tenta ganhar um avião de caça em uma promoção da Pepsi, dando início a uma batalha judicial histórica.</p>
             <div class="banner__botoes">
                 <div class="banner__botao">
@@ -42,8 +91,6 @@
                     <button class="banner__botao--classificacao"> <span class="banner__idade">A12</span> </button>
                 </div>
             </div>
-
-
         </section>
     </main>
     <footer></footer>

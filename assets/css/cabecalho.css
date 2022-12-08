@@ -2,14 +2,13 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 1rem 3rem;
-    
+    margin: 0 3rem; 
 }
 
 .logo{
-   width: 150px;
-   height: 50px; 
-   margin-right: 3rem;
+   width: 120px;
+   height: 30px; 
+   margin-right: 1rem;
 }
 
 
@@ -19,8 +18,14 @@
 }
 
 .menu__lista{
+    align-items: center;
     display: flex;
     list-style-type: none;
+}
+
+.menu__perfil, .menu__notificacao{
+    list-style-type: none;
+    position: relative;
 }
 
 .menu__link{
@@ -30,12 +35,54 @@
 }
 
 .menu__link:hover{
-    color: rgba(109, 109, 110, 0.7);
+    opacity: .7;
     transition: .5s;
 }
 
+.menu__filme{
+    align-items: center;
+    background-color: black;
+    border: 1px solid transparent;
+    display: none;
+    list-style-type: none;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    padding: .5rem;
+    width: 350px;
+}
+
+.menu__filme:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.menu__filme--imagem{
+    margin-right: 1rem;
+}
+
+.menu__filme--titulo{
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.menu__filme--subtitulo{
+    color: var(--branco);
+    font-size: 14px;
+}
+
+.menu__filme--texto{
+    color: gray;
+    font-size: 12px;
+}
+.icones{
+    align-items: center;
+    display: flex;
+}
+
 .icones__notificacao{
-    margin: 0 1rem;
+    margin: 1rem 2rem;
+    
 }
 
 .icones__perfil{
@@ -43,4 +90,68 @@
     height: 30px; 
 }
 
+.icones__perfil--mudar{
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid var(--branco);
+    margin-left: .5rem;
+}
 
+.icones__perfil--mudar:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: all .5s;
+    
+}
+
+.menu__icone{
+    align-items: center;
+    display: flex;
+    margin: 1rem 0;
+}
+
+.menu li:hover > ul{
+    display: flex;
+}
+
+.detalhes{
+    align-items: center;
+    background-color: black;
+    border: 1px solid transparent;
+    display: none;
+    flex-direction: column;
+    opacity: 0.8;
+    position: absolute;
+    right: 0;
+    width: 230px;
+     
+}
+
+
+.detalhes__icones{
+    align-items: center;
+    display: flex;
+    padding: .5rem .5rem;
+    width: 100%;
+    margin-left: 1rem;
+    padding-right: 0;
+    
+}
+
+.detalhes__nome{
+    color: var(--branco);
+    margin-left: .5rem;
+    text-decoration: none;
+}
+
+.detalhes__nome:hover{
+    text-decoration: underline;
+}
+
+.detatalhes__icones--final{
+    border-bottom: 1px solid grey;;
+}
+
+.detalhes__nome--sair{
+    margin-left: 3.5rem;
+}
