@@ -1,5 +1,7 @@
 @import url("cabecalho.css");
+@import url("menu.css");
 @import url("banner.css");
+
 
 :root{
     --cor-de-fundo: #141414;
