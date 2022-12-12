@@ -267,8 +267,9 @@
         $(window).scroll(function() { 
             var scroll = $(window).scrollTop();
 
-            if (scroll > 50) {
+            if (scroll > 40) {
                 $('.menu').css('background-color','#141414');
+                $('.menu').css('transition','.5s');
                 
             } else {
                 $('.menu').css('background-color','transparent');
