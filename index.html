@@ -12,17 +12,40 @@
     
 </head>
 <body>
-    <header class="cabecalho"> 
+    <header> 
         <nav class="menu">
-            <ul class="menu__lista">
+            <div class="menu-principal">
                 <img class="menu__logo" src="assets/img/logo.svg" alt="Logo do site">
-                <li class="menu__item"><a href="#" class="menu__link">Início</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Séries</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Filmes</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Bombando</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Minha lista</a></li>
-                <li class="menu__item"><a href="#" class="menu__link">Navegar por idiomas</a></li>
-            </ul>
+                <ul>
+                    <li class="menu__responsivo">
+                        <div class="menu-nav">
+                            <a href="#" class="menu-nav__navegar">Navegar</a>
+                            <span class="menu-nav__mudar"></span>
+                        </div>
+                        <ul class="menu-responsivo__lista">
+                            <li>
+                                <ul>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Início</a></li>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Séries</a></li>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Filmes</a></li>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Bombando</a></li>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Minha lista</a></li>
+                                    <li class="menu-responsivo__item"><a href="#" class="menu-responsivo__link">Navegar por idiomas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="menu__lista">
+                    <li class="menu__item"><a href="#" class="menu__link">Início</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Séries</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Filmes</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Bombando</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Minha lista</a></li>
+                    <li class="menu__item"><a href="#" class="menu__link">Navegar por idiomas</a></li>
+                </ul>
+            </div>
+            
             <ul class="menu__lista2">
                 <li class="menu__icone">
                     <img src="assets/img/procurar.svg" alt="Icone de buscar">
@@ -30,7 +53,7 @@
                 <li class="menu__notificacao">
                     <img class="menu__notificacao--icone" src="assets/img/notificacao.svg" alt="Icone de notificação">
                     <ul class="menu__filme">
-                        <li class="menu__lista">
+                        <li class="menu__filme--item">
                             <div>
                                 <img class="menu__filme--imagem" src="assets/img/notificacao_img.jpg" alt="Imagem do filme O Troll da Montanha">
                             </div>
@@ -80,13 +103,12 @@
             </ul>
         </nav>
     </header>
-        <img class="filme" src="assets/img/banner1.jpg" alt=" Uma arvore de Natal, um homem de pé ao lado, uma mulher sentada e outra mulher de pé">
-    <main>
+    <main class="filme">
         <section class="banner">
             <img class="banner__imagem " alt="Filme um natal cheio de graça"  src="assets/img/filme.png">
             <p class="banner__descricao">Recém-contratada por um grande escritório de advocacia, uma jovem brilhante no espectro autista enfrenta desafios dentro e fora do tribunal.</p>
             <div class="banner__container">
-                <div class="banner__botao">
+                <div class="banner__botao ">
                     <button class="banner__botao--assistir"> <img class="banner__botao--imagem" src="assets/img/assistir.svg" alt="Icone assistir"> Assistir</button>
                     <button class="banner__botao--inf"> <img class="banner__botao--imagem" src="assets/img/inf.svg" alt="Icone assistir"> Mais informações</button>
                 </div>
@@ -100,8 +122,8 @@
     <section class="carrossel">
         <div class="swiper">
             <div class="swiper__titulo">
-                <h2 class="carrossel__titulo">Lançados nos ultimos 12 meses</h2>
-                <div class="swiper-pagination"></div>
+                    <h2 class="carrossel__titulo">Lançados nos ultimos 12 meses</h2>
+                    <div class="swiper-pagination"></div>
             </div>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="assets/img/filme1.jpg"></div>
@@ -126,8 +148,8 @@
             </div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-    
         </div>
+
         <div class="swiper">
             <div class="swiper__titulo">
                 <h2 class="carrossel__titulo">Em alta</h2>
@@ -249,21 +271,21 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
-        const swiper = new Swiper('.swiper', {
-        spaceBetween: 10,
-        slidesPerView: 6,
-        slidesPerView: 6,
-        slidesPerGroup: 6,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-});
 
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 6,
+            slidesPerGroup: 6,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            });
+    
         $(window).scroll(function() { 
             var scroll = $(window).scrollTop();
 

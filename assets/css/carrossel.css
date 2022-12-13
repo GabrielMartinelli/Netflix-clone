@@ -1,3 +1,7 @@
+.carrossel{
+    width: 100%;
+}
+
 .carrossel__titulo{
     margin-left: 3rem;
     color: var(--branco);
@@ -6,13 +10,14 @@
 .swiper__titulo{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    margin-top: 1rem;
 }
+    
 
 .swiper-wrapper{
     margin-top: .5rem;
     margin-bottom: 1rem;
 }
-
 
 
 .swiper-slide img{
@@ -33,9 +38,16 @@
     width: 15px;
 }
 
-.swiper-button-next, .swiper-button-prev{
-    color: var(--branco);
+.swiper-button-prev{
+   color: var(--branco);
+   left: 0;
 }
+
+.swiper-button-next{
+  color: var(--branco);
+  right: 0;
+}
+
 
 .swiper .swiper-wrapper {
     padding: 20px 0;
@@ -45,22 +57,34 @@
     -webkit-transition: 300ms all;
     transition: 300ms all;
   }
+
   
   .swiper .swiper-slide:hover {
     cursor: pointer;
-    -webkit-transform: scale(1);
-    transform: scale(1.5);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
     z-index: 1;
   }
-  
-  .swiper .swiper-slide:first-child:hover {
-    margin: 0 10rem;
-  }
-  
-  .swiper .swiper-slide:last-child:hover {
-    margin: 0 -10rem;
-  }
 
-  .swiper .swiper-slide:nth-child(6):hover {
-    margin: 0 -10rem;
-  }
+  @media screen and (max-width: 980px) {
+
+    .carrossel{
+        width: 100vh;
+    }
+
+
+    .carrossel__titulo{
+        font-size: 14px;
+    }
+
+    .swiper__titulo{
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+
+    .swiper-button-prev::after, .swiper-button-next::after{
+        font-size: 14px;
+    }
+}
+  

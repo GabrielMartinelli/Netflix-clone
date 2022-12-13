@@ -9,6 +9,12 @@
     z-index: 10;
 }
 
+.menu-principal{
+    align-items: center;
+    display: flex;
+    margin-left: 3rem;
+}
+
 .menu__fixo{
     background: var(--cor-de-fundo);
 }
@@ -20,11 +26,17 @@
     margin-left: 3rem;
 }
 
+.menu__filme--item{
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    margin-left: 3rem;
+}
+
 
 .menu__logo{
    width: 120px;
    height: 30px; 
-   margin-right: 1rem;
 }
 
 .menu__link{
@@ -50,6 +62,15 @@
     position: relative;
 }
 
+.menu__responsivo{
+    display: none;
+    list-style-type: none;
+    margin-left: 1rem;
+    position: relative;
+}
+
+
+
 .menu__filme{
     align-items: center;
     background-color: black;
@@ -59,8 +80,8 @@
     opacity: 0.8;
     position: absolute;
     right: 0;
-    padding: .5rem;
-    width: 350px;
+    padding: .5rem 0;
+    width: 400px;
 }
 
 .menu__filme:hover{
@@ -75,6 +96,7 @@
 .menu__filme--titulo{
     color: var(--branco);
     font-size: 18px;
+    width: 250px;
 }
 
 .menu__filme--subtitulo{
@@ -119,7 +141,7 @@
 }
 
 .menu li:hover > ul{
-    display: flex;
+    display: block;
 }
 
 .menu__detalhes{
@@ -163,3 +185,83 @@
 .menu__detalhes--sair{
     margin-left: 3.5rem;
 }
+
+
+/*Menu responsivo */
+
+@media screen and (max-width: 980px) {
+
+    .menu{
+        width: 100vh;
+    }
+
+    .menu__lista{
+        display: none;
+    }
+
+    .menu__responsivo{
+        display: block;
+    }
+    .menu__logo{
+        width: 90px;
+        height: 20px; 
+     }
+
+    .menu-nav{
+        align-items: center;
+        display: flex;
+        padding: 2rem 0;
+    }
+    
+    .menu-responsivo__item{
+        list-style-type: none;
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+    
+    .menu-responsivo__link{
+        color: var(--branco);
+        text-decoration: none;
+        width: 100%;
+    }
+    
+    .menu-responsivo__item:hover{
+        background-color: rgb(54, 54, 54);
+    
+    }
+    
+    .menu-nav__navegar{
+        color: var(--branco);
+        text-decoration: none;
+    }
+    
+    .menu-nav__mudar{
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 6px solid var(--branco);
+        margin-left: .5rem;
+        
+    }
+    
+    .menu-nav__mudar:hover{
+        cursor: pointer;
+    }
+    
+    .menu-responsivo__lista{
+        border-top: 2px solid var(--branco);
+        text-align: center;
+        align-items: center;
+        background-color: black;
+        display: none;
+        list-style-type: none;
+        opacity: 0.9;
+        position: absolute;
+        padding: .5rem 0;
+        width: 250px;
+        right: 0;
+        
+    }
+
+    
+}
+

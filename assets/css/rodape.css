@@ -1,6 +1,7 @@
 .rodape{
     align-items: center;
     display: flex;
+    
     flex-direction: column;
     margin: 3rem 0;
     width: 100%;
@@ -22,16 +23,20 @@
 
 .lista-rodape{
     margin-right: 5rem;
+    width: 100%;
 }
 
 .lista-rodape__item{
     list-style-type: none;
     margin-bottom: 1rem;
+    width: 100%;
+
 }
 
 .lista-rodape__link{
     color: var(--cor-links-rodape);
     text-decoration: none;
+    width: 100%;
 }
 
 .lista-rodape__link:hover{
@@ -58,4 +63,28 @@
 
 .rodape-final__direitos{
     color: var(--cor-links-rodape);
+}
+
+@media screen and (max-width: 980px) {
+
+    .rodape{
+        width: 100vh;
+    }
+
+    .rodape-final__servico{
+        width: 25vh;
+    }
+
+    .redes{
+        margin-left: 3rem;
+    }
+
+    .lista-rodape{
+        margin: 0 3rem;
+        
+    }
+
+    .rodape-final{
+        margin-left: 3rem;
+       }
 }
