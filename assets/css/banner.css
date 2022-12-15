@@ -1,3 +1,8 @@
+.banner{
+    width: 100%;
+}
+
+
 .banner__imagem{
     margin-top: 8rem;
     margin-left: 3rem;
@@ -112,10 +117,7 @@
 
 @media screen and (max-width: 980px) {
 
-    .filme{
-        width: 100vh;
-    }
-
+  
     .banner__imagem{
         width: 60%;
     }

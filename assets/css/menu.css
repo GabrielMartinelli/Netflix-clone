@@ -1,3 +1,7 @@
+.cabecalho{
+    width: 100%;
+}
+
 .menu{
     display: flex;
     align-items: center;
@@ -190,10 +194,6 @@
 /*Menu responsivo */
 
 @media screen and (max-width: 980px) {
-
-    .menu{
-        width: 100vh;
-    }
 
     .menu__lista{
         display: none;

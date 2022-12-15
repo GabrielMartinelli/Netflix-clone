@@ -1,7 +1,6 @@
 .rodape{
     align-items: center;
     display: flex;
-    
     flex-direction: column;
     margin: 3rem 0;
     width: 100%;
@@ -19,11 +18,12 @@
 .container-rodape{
     align-items: center;
     display: flex;
+    width: 100%;
 }
 
 .lista-rodape{
     margin-right: 5rem;
-    width: 100%;
+    
 }
 
 .lista-rodape__item{
@@ -67,8 +67,9 @@
 
 @media screen and (max-width: 980px) {
 
-    .rodape{
-        width: 100vh;
+    .container-rodape{
+        margin-top: 1rem;
+        flex-wrap: wrap;
     }
 
     .rodape-final__servico{
