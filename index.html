@@ -272,6 +272,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script>
 
+   var largura = window.screen.availWidth;
+
+    if (largura <= 760){
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+
+    }else{
         const swiper = new Swiper('.swiper', {
             spaceBetween: 10,
             slidesPerView: 6,
@@ -285,6 +303,10 @@
                 prevEl: '.swiper-button-prev',
             },
             });
+
+    }
+
+    console.log(largura);
     
         $(window).scroll(function() { 
             var scroll = $(window).scrollTop();
