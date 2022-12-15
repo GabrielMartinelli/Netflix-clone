@@ -2,12 +2,13 @@
 @import url("banner.css");
 @import url("carrossel.css");
 @import url("rodape.css");
+@import url("principal.css");
 
 
 :root{
+    --branco: #FFFFFF;
     --cor-de-fundo: #141414;
     --cor-links-rodape: #808080;
-    --branco: #FFFFFF;
 }
 
 body{

@@ -26,7 +26,7 @@
     margin-bottom: 6rem;
 }
 
-.banner__botao1{
+.banner__botao2{
     display: flex;
     margin-bottom: 6rem;
 }
@@ -45,7 +45,6 @@
     margin-right: .5rem;
     padding: 8px 16px;
     text-decoration: none;
-    
 }
 
 .banner__botao--assistir:hover{
@@ -75,7 +74,6 @@
 
 .banner__botao--imagem{
     margin-right: 8px;
-    
 }
 
 .banner__botao--novamente{
@@ -103,8 +101,6 @@
     box-sizing: border-box;
     text-align: left;
     padding-left: 1rem;
-
-    
 }
 
 .banner__idade{
@@ -114,10 +110,7 @@
     padding: 8px 4px;
 }
 
-.filme{
-    background: url('../img/banner.jpg') no-repeat center / cover ;
-    width: 100%;
-}
+
 
 @media screen and (max-width: 980px) {
 
@@ -129,7 +122,6 @@
     .banner__descricao{
         margin-left: 1rem;
         width: 70%;
-
     }
 
     .banner__container{
@@ -148,9 +140,5 @@
     .banner__botao--inf{
         font-size: 16px;
     }
-
-
-
-
-  
+    
 }
