@@ -26,6 +26,12 @@
     margin-bottom: 6rem;
 }
 
+.banner__botao1{
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+
 .banner__botao--assistir{
     align-items: center;
     background-color: var(--branco);
@@ -78,12 +84,10 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
     height: 40px;
     margin-right: .5rem;
     opacity: 1;
     padding: 0.5rem;
-    position: relative;
     width: 40px;
 }
 
@@ -99,7 +103,8 @@
     box-sizing: border-box;
     text-align: left;
     padding-left: 1rem;
-    width: 100px;
+
+    
 }
 
 .banner__idade{
@@ -111,28 +116,40 @@
 
 .filme{
     background: url('../img/banner.jpg') no-repeat center / cover ;
-    opacity: 1;
     width: 100%;
 }
 
 @media screen and (max-width: 980px) {
 
-  
     .banner__imagem{
+        margin-left: 1rem;
         width: 60%;
     }
 
     .banner__descricao{
+        margin-left: 1rem;
         width: 70%;
+
+    }
+
+    .banner__container{
+        margin-left: 1rem;
+    }
+
+    .banner__botao{
+        display: block
     }
 
     .banner__botao--assistir{
         font-size: 16px;
+        margin-bottom: 1rem;
     }
 
     .banner__botao--inf{
         font-size: 16px;
     }
+
+
 
 
   

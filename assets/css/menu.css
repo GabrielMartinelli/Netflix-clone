@@ -1,15 +1,10 @@
-.cabecalho{
-    width: 100%;
-}
-
 .menu{
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 0;
+
     z-index: 10;
 }
 
@@ -59,6 +54,7 @@
     display: flex;
     list-style-type: none;
     margin-right: 3rem;
+  
 }
 
 .menu__perfil, .menu__notificacao{
@@ -195,6 +191,19 @@
 
 @media screen and (max-width: 980px) {
 
+    .menu-principal{
+
+        margin-left: 0;
+    }
+
+    .menu__lista2{
+
+        margin-right: .5rem;
+      
+    }
+  
+
+    
     .menu__lista{
         display: none;
     }

@@ -12,7 +12,7 @@
     
 </head>
 <body>
-    <header class="cabecalho">
+    <header>
         <nav class="menu">
             <div class="menu-principal">
                 <img class="menu__logo" src="assets/img/logo.svg" alt="Logo do site">
@@ -112,7 +112,7 @@
                     <button class="banner__botao--assistir"> <img class="banner__botao--imagem" src="assets/img/assistir.svg" alt="Icone assistir"> Assistir</button>
                     <button class="banner__botao--inf"> <img class="banner__botao--imagem" src="assets/img/inf.svg" alt="Icone assistir"> Mais informações</button>
                 </div>
-                <div class="banner__botao">
+                <div class="banner__botao1">
                     <button class="banner__botao--novamente"> <img src="assets/img/recarregar.svg" alt="Icone assistir"></button>
                     <button class="banner__botao--classificacao"> <span class="banner__idade">A12</span> </button>
                 </div>
@@ -262,7 +262,7 @@
             </div>
             <div class="rodape-final">           
                 <span class="rodape-final__servico">Código do serviço</span>
-                <span class="rodape-final__direitos">© 1997-2022 Netflix, Inc.</span>
+                <span class="rodape-final__direitos">Desenvolvido por Gabriel Martinelli - com finalidade de estudo</span>
             </div>
 
         </div>
@@ -270,9 +270,10 @@
    
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    
     <script>
-
-   var largura = window.screen.availWidth;
+    
+    var largura = window.screen.availWidth;
 
     if (largura <= 760){
         const swiper = new Swiper('.swiper', {

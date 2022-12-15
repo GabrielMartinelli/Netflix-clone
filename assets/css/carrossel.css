@@ -48,11 +48,6 @@
   right: 0;
 }
 
-
-.swiper .swiper-wrapper {
-    padding: 20px 0;
-  }
-  
   .swiper .swiper-slide {
     -webkit-transition: 300ms all;
     transition: 300ms all;
