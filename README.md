@@ -3,7 +3,7 @@
 # Sobre o projeto
 Foi realizado o clone da página principal da plataforma Netflix, praticando os conceitos de flexbox, grid e responsividade
 
- 🔽 **Clique <a href="https://github.com/GabrielMartinelli/Netflix-clone.git">aqui</a> para baixar o projeto.**
+ 🔽 **Clique <a href="https://github.com/GabrielMartinelli/Netflix-clone/archive/refs/heads/master.zip">aqui</a> para baixar o projeto.**
 
 💻 📱 **Clique <a href="https://netflix-clone-pi-bice.vercel.app/">aqui</a> para acessar o deploy.**
 
